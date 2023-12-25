@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Quran Verses</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #fff; /* White background color */
+            color: #333; /* Text color */
+        }
+        h1 {
+            font-size: 36px;
+        }
+        #verseDisplay {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        #verseContext {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        #generateVerseButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 4px;
+        }
+        #footer {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #555; /* Footer text color */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Al Quran Verses</h1>
+
+    <div id="verseDisplay">Click the button to generate a random Quranic verse</div>
+    <div id="verseContext">Verse context will be displayed here</div>
+
+    <button id="generateVerseButton" onclick="generateRandomVerse()">Generate Verse</button>
+
+    <div id="footer">
+        Developed by Ibrahim Khurram
+    </div>
+
+    <script>
+        // Array of Quranic verses (replace with actual content)
+        var quranicVerses = [
+            {
+                verse: "In the name of Allah, the Most Gracious, the Most Merciful.",
+                context: "This verse is often recited at the beginning of chapters in the Quran and signifies seeking the blessings and guidance of Allah, the Merciful and Gracious."
+            },
+            {
+                verse: "Say, \"He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.\"",
+                context: "This verse emphasizes the oneness of Allah, the Eternal and Unique, with no partners or equals. It rejects the notion of Allah having offspring."
+            },
+            {
+                verse: "Indeed, Allah is with those who fear Him and those who are doers of good.",
+                context: "This verse highlights that Allah is with those who have piety and righteousness, indicating a close relationship between the Creator and those who follow His guidance."
+            },
+            {
+                verse: "And We have certainly created man, and We know what his soul whispers to him, and We are closer to him than [his] jugular vein.",
+                context: "This verse emphasizes the intimate knowledge and closeness of Allah to His creation, knowing even the innermost thoughts and feelings of individuals."
+            },
+            {
+                verse: "And your ally is none but Allah and [therefore] His Messenger and those who have believed - those who establish prayer and give zakah, and they bow [in worship].",
+                context: "This verse highlights the importance of having alliance with Allah, His Messenger, and the believers. It mentions the qualities of those who are true allies of Allah."
+            },
+            {
+                verse: "And He found you lost and guided [you].",
+                context: "This verse reflects on the guidance of Allah, finding individuals lost and providing them with guidance. It emphasizes the role of Allah in guiding humanity."
+            },
+            {
+                verse: "And Allah is the best of providers.",
+                context: "This verse acknowledges Allah as the ultimate provider, highlighting His ability to provide for the needs of His creation in the best possible way."
+            },
+            {
+                verse: "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+                context: "This verse encourages the remembrance of Allah, promising that He will remember those who remember Him. It also emphasizes gratitude and warns against denial of Allah."
+            },
+            {
+                verse: "And He is with you wherever you are. And Allah, of what you do, is Seeing.",
+                context: "This verse assures believers that Allah is with them at all times and is aware of their actions. It emphasizes the concept of Allah's constant presence and observation."
+            },
+            {
+                verse: "And We have certainly created man, and We know what his soul whispers to him, and We are closer to him than [his] jugular vein.",
+                context: "This verse emphasizes the intimate knowledge and closeness of Allah to His creation, knowing even the innermost thoughts and feelings of individuals."
+            },
+            // Add more verses as needed
+            {
+                verse: "And We have certainly created man, and We know what his soul whispers to him, and We are closer to him than [his] jugular vein.",
+                context: "This verse emphasizes the intimate knowledge and closeness of Allah to His creation, knowing even the innermost thoughts and feelings of individuals."
+            },
+            {
+                verse: "And Allah is the best of providers.",
+                context: "This verse acknowledges Allah as the ultimate provider, highlighting His ability to provide for the needs of His creation in the best possible way."
+            },
+            {
+                verse: "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+                context: "This verse encourages the remembrance of Allah, promising that He will remember those who remember Him. It also emphasizes gratitude and warns against denial of Allah."
+            },
+            {
+                verse: "And He is with you wherever you are. And Allah, of what you do, is Seeing.",
+                context: "This verse assures believers that Allah is with them at all times and is aware of their actions. It emphasizes the concept of Allah's constant presence and observation."
+            },
+            {
+                verse: "And We have certainly created man, and We know what his soul whispers to him, and We are closer to him than [his] jugular vein.",
+                context: "This verse emphasizes the intimate knowledge and closeness of Allah to His creation, knowing even the innermost thoughts and feelings of individuals."
+            },
+            // Add more verses as needed
+            // ...
+        ];
+
+        function generateRandomVerse() {
+            // Generate a random index to pick a verse from the array
+            var randomIndex = Math.floor(Math.random() * quranicVerses.length);
+
+            // Display the randomly chosen verse and context
+            document.getElementById("verseDisplay").innerText = quranicVerses[randomIndex].verse;
+            document.getElementById("verseContext").innerText = quranicVerses[randomIndex].context;
+        }
+    </script>
+
+</body>
+</html>
